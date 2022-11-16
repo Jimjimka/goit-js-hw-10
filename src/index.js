@@ -32,7 +32,9 @@ const onInput =(event)=>{
     }
 })
 .catch(err=>{
-    Notiflix.Notify.warning("Oops, there is no country with that name")
+    countryListEl.innerHTML=''
+    countryInfoEl.innerHTML=''
+    Notiflix.Notify.failure("Oops, there is no country with that name")
 })
 }
 
